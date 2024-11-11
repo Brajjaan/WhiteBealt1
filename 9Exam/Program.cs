@@ -19,12 +19,12 @@ class Program
             if (action == 1)
             {
                 hero.Attack(enemy);
-                Console.WriteLine("\n");
+                Console.WriteLine();
             }
             else if (action == 2)
             {
                 hero.Heal(hero);
-                Console.WriteLine("\n");
+                Console.WriteLine();
             }
             
             if (enemy.Health <= 0)
@@ -34,7 +34,7 @@ class Program
                 continue;
             }
             enemy.Attack(hero);
-            Console.WriteLine("\n");
+            Console.WriteLine();
             
             if (hero.Health <= 0)
             {
